@@ -53,5 +53,34 @@ h2{
     font-weight: 200;
 }
 
+.fokus{
+    padding: 45px;
+}
+
+.fokus h3{
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.fokus p{
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+}
+
+.fokus h4{
+    font-weight: 400;
+    text-align: center;
+    padding-top: 35px;
+    font-size: 15px;
+}
+
+.fokus h5{
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+    font-weight: initial;
+    font-size: 13px;
+}
+
 
 
