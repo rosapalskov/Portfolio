@@ -19,7 +19,7 @@ body{
 
 
 .menu{
-    width: 45px;
+    width: 35px;
     top: 2%;
     position: absolute;
     right: 4%;
@@ -34,7 +34,7 @@ body{
     display: inline-block;
 }
 
-h1{
+.header-forside h1{
     position: absolute;
     top: 4%;
     left: 4%;
@@ -100,14 +100,14 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
-    margin: 38px;
+    
 
 }
 
 .fotos{
     grid-column-start: 1;
     grid-column-end: 5;
-    margin-top: 54px;
+    margin: 30px;
 
 }
 
@@ -119,4 +119,10 @@ h6{
 }
 
 
-
+h1{
+    font-weight: 400;
+    color: var(--grey);
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
