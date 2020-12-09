@@ -26,12 +26,13 @@ body{
 
 }
 
+/*FORSIDE*/
+/*header*/
 .yellow-header{
     width: 100%;
     position: relative;
     display: inline-block;
 }
-
 
 h1{
     position: absolute;
@@ -53,6 +54,7 @@ h2{
     font-weight: 200;
 }
 
+/*main content*/
 .fokus{
     padding: 45px;
 }
@@ -82,11 +84,38 @@ h2{
     font-size: 13px;
 }
 
+/*footer til forside*/
 .bund{
     width: 100%;
     padding-top: 90px;
     padding-bottom: 0;
     
+}
+
+
+
+
+/*FOTOGRAFI-SIDE*/
+.foto-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 38px;
+
+}
+
+.fotos{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-top: 54px;
+
+}
+
+h6{
+    text-align: center;
+    font-size: 20px;
+    columns: var(--grey);
+    font-weight: 400;
 }
 
 
