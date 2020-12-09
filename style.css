@@ -247,3 +247,10 @@ h2{
 .boks2 h2{
     color: var(--bg);
 }
+
+/*FRITIDSPROJEKTER*/
+.fritid{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin: 30px;
+}
