@@ -96,7 +96,7 @@ h2{
 
 
 /*FOTOGRAFI-SIDE*/
-.foto-grid{
+.grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
@@ -125,4 +125,28 @@ h1{
     font-size: 40px;
     text-align: center;
     margin-top: 50px;
+}
+
+/*CASES SIDE*/
+.cases{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin: 30px;
+}
+
+.cases img{
+    border-radius: 7px;
+}
+
+.cases a{
+    background-color: var(--grey);
+    border: none;
+    color: var(--bg);
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 10px;
+    grid-column-start: 2;
 }
