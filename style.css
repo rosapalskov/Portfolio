@@ -18,7 +18,10 @@ body{
 }
 
 
+@media screen and (max-width: 600px){
+
 /* Dropdown Button */
+
 .menu {
    width: 35px;
     top: 2%;
@@ -28,17 +31,20 @@ body{
 
 
 /* Dropdown Content (Hidden by Default) */
+
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: var(--yellow);
   width: 100%;
   height: 100%;
-
-  
+  top: 0;
+  left: 0;
 }
 
+
 /* Links inside the dropdown */
+
 .dropdown-content a {
     color: var(--bg);
     padding: 12px 16px;
@@ -50,19 +56,24 @@ body{
     margin-bottom: 53.5px;
 }
 
+
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: var(--blue)}
+.dropdown-content a:hover{
+    background-color: var(--blue)
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-
+.dropdown-content{
+    display: block;
+}
 
 
 
 
 /*FORSIDE*/
+
 /*header*/
+
 .yellow-header{
     width: 100%;
     position: relative;
@@ -91,6 +102,7 @@ body{
 }
 
 /*main content*/
+
 .fokus{
     padding: 45px;
 }
@@ -344,6 +356,7 @@ h2{
     margin: 30px;
 }
 
+
 /*FOOTER*/
 .footer{
     background-color: var(--blue);
@@ -357,13 +370,62 @@ p{
     font-weight: 300;
     font-size: 10px;
 }
-
+}
 
 @media screen and (min-width: 1080px){
 
 /*Navigation*/
 .menu {
     width: 35px;
+    top: 30px;
+    position: absolute;
+    right: 2%;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.dropdown {
+    position: absolute;
+    background-color: var(--yellow);
+    top: 30px;
+    width: 100%;
+    height: 50px;
+}
+
+.dropdown.show {
+    height: 100vh;
+}
+
+/*Dropdown Content (Hidden when no used)*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--yellow);
+    width: 100%;
+    height: 100%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: var(--bg);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 53.5px;
+    cursor: pointer;
+}
+/* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+    background-color: var(--blue)
+}
+/*Hide nav again when clicking on menu icon*/
+.show {
+    display: block;
+}
+
      top: 3%;
      position: absolute;
      right: 2%;
@@ -403,15 +465,17 @@ p{
  
 
  /*Hide nav again when clicking on menu icon*/
- .show {display:block;}
+ .show{
+   display:block;
+  }
 
-}
 
 
 /*TEKST*/
 .header-forside h1{
     font-size: 137px;
     top: 13%;
+    color: var(--bg)
 }
 
 .forside-h2{
@@ -422,5 +486,5 @@ p{
     font-family: 'Mulish', sans-serif;
     font-weight: 200;
     font-size: 73px;
-
+}
 }
