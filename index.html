@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside</title>
     <link rel="stylesheet" href="style.css">
+
+    
+
 </head>
 <body>
     <header class="header-forside">
@@ -13,7 +16,7 @@
         <h2 class="forside-h2">Multimediedesigner</h2>
         
         <div class="dropdown">
-            <img class="menu" src="images/burgermeny.png" alt="menu">
+            <img class="menu" onclick="MyFunction()" src="images/burgermeny.png" alt="menu">
                 <div class="dropdown-content">
                 <a href="index.html">Forside</a>
                 <a href="cases.html">Cases</a>
@@ -38,5 +41,25 @@
             <p>Rosa Palskov<br>©Copyright 2020<br>Mail: rosa0426@edu.easj.dk</p>
         </div>
     </footer>
+
+    <script>
+        function myFunction() {
+    document.getElementById("menu").classList.toggle("show");
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('menu')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+    </script>
+
 </body>
 </html>
