@@ -8,9 +8,9 @@
 </head>
 <body>
     <header>
-        <img class="yellow-header" src="images/baggrund-corner.png" alt="Colourful background">
+        <img class="yellow-header2" src="images/baggrund-corner.png" alt="Colourful background" width="50%">
         <div class="dropdown">
-            <img class="menu" src="images/burgermeny.png" alt="menu">
+            <img class="menu" onclick="MyFunction()" src="images/burgermenu-sort.png" alt="menu">
                 <div class="dropdown-content">
                 <a href="index.html">Forside</a>
                 <a href="cases.html">Cases</a>
@@ -52,5 +52,17 @@
     <div class="footer">
         <p>Rosa Palskov<br>©Copyright 2020<br>Mail: rosa0426@edu.easj.dk</p>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+               document.querySelector(".dropdown").addEventListener('click', function(event) {
+                   if (document.querySelector(".dropdown").classList.contains("show")) {
+                       document.querySelector(".dropdown").classList.remove("show");
+                   } else {
+                       document.querySelector(".dropdown").classList.add("show");
+                   }
+               });
+           });
+       </script>
 </body>
 </html>

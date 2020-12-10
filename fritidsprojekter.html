@@ -11,7 +11,7 @@
     <header>
         <h1>Fritidsprojekter</h1>
         <div class="dropdown">
-            <img class="menu" src="images/burgermenu-sort.png" alt="menu">
+            <img class="menu" onclick="MyFunction()" src="images/burgermenu-sort.png" alt="menu">
                 <div class="dropdown-content">
                 <a href="index.html">Forside</a>
                 <a href="cases.html">Cases</a>
@@ -39,12 +39,22 @@
             <img src="images/pour.jpg" alt="Acrylic pour" width="100%">
         </div>
 
-        
-
     </section>
 
     <div class="footer">
         <p>Rosa Palskov<br>©Copyright 2020<br>Mail: rosa0426@edu.easj.dk</p>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+               document.querySelector(".dropdown").addEventListener('click', function(event) {
+                   if (document.querySelector(".dropdown").classList.contains("show")) {
+                       document.querySelector(".dropdown").classList.remove("show");
+                   } else {
+                       document.querySelector(".dropdown").classList.add("show");
+                   }
+               });
+           });
+       </script>
 </body>
 </html>
