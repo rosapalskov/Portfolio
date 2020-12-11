@@ -313,24 +313,6 @@ width: 100%;
 
 
 
-    
-    
-
-@media screen and(max-width: 600px){
-
-
-
-/*FOTOGRAFI-SIDE*/
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    
-}
-
-
-
-
 .lys-tekst{
     font-family: 'Mulish', sans-serif;
     font-size: 15px;
@@ -407,8 +389,20 @@ h2{
     grid-column-start: 1;
     grid-column-end: 5;
     margin: 30px;
-}
+}    
+    
 
+@media screen and(max-width: 600px){
+
+
+
+/*FOTOGRAFI-SIDE*/
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    
+}
 }
 
 
@@ -473,6 +467,7 @@ h2{
 .show .dropdown-content{
      display: block;
 }
+
 
 
 
@@ -701,8 +696,8 @@ width: 70%;
     border-radius: 50px;
     padding: 20px;
     margin-top: 10px;
-    margin-left: 413px;
-    margin-right: 413px;
+    margin-left: 380px;
+    margin-right: 380px;
     margin-bottom: 20px;
 }
 
