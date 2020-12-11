@@ -274,6 +274,7 @@ width: 100%;
 .blue-header{
     position: relative;
     display: inline-block;
+    width: 100%;
 }
 
 .om-h1{
@@ -287,6 +288,7 @@ width: 100%;
     margin: 0;
 }
 
+/*Tekstboks på om-mig*/
 .boks2{
     background-color: var(--yellow);
     grid-column-start: 1;
@@ -305,29 +307,16 @@ width: 100%;
     color: var(--bg);
 }
 
+/*Portræt af mig*/
 .mig{
     position: absolute;
-    top: 90px;
-    left: 150px;
+    top: 100px;
+    left: 140px;
 }
 
-
-
-    
-    
-
-@media screen and(max-width: 600px){
-
-
-
-/*FOTOGRAFI-SIDE*/
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    
+.mig2{
+    width: 200px;
 }
-
 
 
 
@@ -407,10 +396,17 @@ h2{
     grid-column-start: 1;
     grid-column-end: 5;
     margin: 30px;
-}
+}    
+    
 
+@media screen and(max-width: 600px){
+/*Grid til alle sider i mobil format*/
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    }
 }
-
 
 
 
@@ -473,6 +469,7 @@ h2{
 .show .dropdown-content{
      display: block;
 }
+
 
 
 
@@ -620,6 +617,8 @@ h2{
 }
 
 
+/*Tekstboks på om-mig*/
+
 .boks2{
     background-color: var(--yellow);
     grid-column-start: 3;
@@ -628,6 +627,7 @@ h2{
     border-radius: 7px;
     padding: 60px;
     margin-top: 160px;
+    margin-bottom: 160px;
 }
 
 .boks2 h6{
@@ -638,17 +638,20 @@ h2{
     color: var(--bg);
 }
 
+/*Portræt af mig*/
 .mig{
     position: absolute;
-    top: 100px;
-    right: 1px;
+    top: 170px;
+    left: 750px;
 }
 
 .mig2{
     width: 500px;
 }
 
+
 /*BALLET BY BIRGITTE*/
+/*sætter div i grid*/
 .bbb{
     grid-column-start: 2;
     grid-column-end: 16;
@@ -660,6 +663,7 @@ h2{
 
 
 /*FRITIDSPROJEKTER*/
+/*Sætter div i grid*/
 .fritid{
     grid-column-start: 2;
     grid-column-end: 16;
@@ -680,6 +684,7 @@ display: inline-block;
 width: 70%;
 }
 
+/*Sætter div i grid*/
 .cases{
     grid-column-start: 4;
     grid-column-end: 14;
@@ -690,6 +695,7 @@ width: 70%;
     margin-bottom: 30px;
 }
 
+/*Knapper til cases*/
 .cases a{
     background-color: var(--grey);
     border: none;
@@ -701,40 +707,17 @@ width: 70%;
     border-radius: 50px;
     padding: 20px;
     margin-top: 10px;
-    margin-left: 413px;
-    margin-right: 413px;
+    margin-left: 380px;
+    margin-right: 380px;
     margin-bottom: 20px;
 }
-
 
 
 
 /*OM MIG*/
 
 
-.boks2{
-    background-color: var(--yellow);
-    grid-column-start: 1;
-    grid-column-end: 5;
-    margin: 30px;
-    border-radius: 7px;
-    padding: 30px;
-    margin-top: 160px;
-}
 
-.boks2 h6{
-    color: var(--bg);
-}
-
-.boks2 h2{
-    color: var(--bg);
-}
-
-.mig{
-    position: absolute;
-    top: 90px;
-    left: 150px;
-}
 
 
 }
