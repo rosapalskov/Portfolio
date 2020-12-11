@@ -300,14 +300,12 @@ width: 100%;
 .mig{
     position: absolute;
     top: 100px;
-    left: 140px;
-    
+    left: 140px; 
 }
 
 .mig2{
     width: 200px;
 }
-
 
 
 .lys-tekst{
@@ -381,6 +379,7 @@ h2{
 }
 
 
+
 /*FRITIDSPROJEKTER*/
 .fritid{
     grid-column-start: 1;
@@ -388,6 +387,7 @@ h2{
     margin: 30px;
 }    
     
+
 
 @media screen and(max-width: 600px){
 /*Grid til alle sider i mobil format*/
@@ -401,6 +401,12 @@ h2{
 
 
 @media screen and (min-width: 1080px){
+    
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
 
 /*NAVIGATION*/
 .menu {
@@ -423,7 +429,6 @@ h2{
 .dropdown.show {
     height: 100vh;
 }
-
 
 /*Dropdown Content (Hidden when not used)*/
 .dropdown-content {
@@ -490,8 +495,6 @@ h1{
     font-size: 110px;
     text-align: center;
     margin-top: 100px;
-
-
 }
 
 h2{
@@ -521,15 +524,6 @@ h6{
     margin: 0;
 }
 
-
-
-
-
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 30px;
-}
 
 
 /*YOUNG AUTO DRIVERS*/
